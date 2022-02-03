@@ -35,7 +35,7 @@ body {
 }
 
 .global .counter .text .count-ditect {
-    padding-top: 80px;
+    padding-top: 5px;
     display: flex;
     flex-direction: row;
     gap: 5rem;
@@ -72,11 +72,25 @@ body {
 }
 
 .global .counter .text p {
+    padding-top: 15vh;
     font-family: 'Open Sans', sans-serif;
     text-align: center;
     font-weight: bold;
     color: rgb(0, 0, 0);
     font-size: 60px;
+}
+
+.global .counter .text {
+    display: flex;
+    flex-direction: column;
+}
+
+.global .counter .text .log {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    text-align: center;
+    justify-content: center;
 }
 
 .global .counter .text div .nb {
@@ -102,4 +116,39 @@ body {
 
 .svg {
     padding-top: 50px;
+}
+
+.log {
+    padding-top: 120px;
+}
+
+.button {
+    text-decoration: none;
+    border: none;
+    background-color: white;
+    font-family: 'Open Sans', sans-serif;
+    cursor: pointer;
+    width: 90px;
+    padding: 5px 0;
+    border-radius: 10px;
+    font-size: 15px;
+}
+
+.login {
+    border: 2px solid green;
+    color: green;
+}
+
+.signup {
+    border: 2px solid red;
+    color: red;
+}
+
+.hover {
+    transition: transform 300ms;
+}
+
+.hover:hover {
+    transform: translateY(-25%);
+    transition-duration: 200ms;
 }
