@@ -1,7 +1,10 @@
 const countdown = () => {
-    const countDate = new Date("August 16, 2022 00:00:00").getTime();
+    const countDate = new Date("Februar 4, 2022 14:00:00").getTime();
     const nowDate = new Date().getTime();
-    const gap = countDate - nowDate;
+    let gap = countDate - nowDate;
+
+    //date dépassée
+    if(gap < 0) gap = 0
 
     //counts
     const second = 1000;
